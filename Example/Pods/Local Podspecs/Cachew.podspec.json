@@ -1,0 +1,22 @@
+{
+  "name": "Cachew",
+  "version": "0.1.0",
+  "summary": "A short description of Cachew.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/fdika24/Cachew",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "fdika24": "18220015@std.stei.itb.ac.id"
+  },
+  "source": {
+    "git": "https://github.com/fdika24/Cachew.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Cachew/Classes/**/*"
+}

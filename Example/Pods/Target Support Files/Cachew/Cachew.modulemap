@@ -1,0 +1,6 @@
+framework module Cachew {
+  umbrella header "Cachew-umbrella.h"
+
+  export *
+  module * { export * }
+}

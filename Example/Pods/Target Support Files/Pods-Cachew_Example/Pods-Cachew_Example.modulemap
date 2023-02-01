@@ -1,0 +1,6 @@
+framework module Pods_Cachew_Example {
+  umbrella header "Pods-Cachew_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
