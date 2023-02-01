@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Cachew
 
 class ViewController: UIViewController {
+    
+    let cacheRepo = Cachew<String>()
 
     override func viewDidLoad() {
         super.viewDidLoad()

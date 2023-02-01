@@ -8,15 +8,18 @@
 import Foundation
 
 public final class Cachew<ValueType> {
+    
     private let wrapper = NSCache<CachewKey, CachewValue>()
     private var keys = [String]()
     
-    func get(key: String) -> ValueType? {
+    public func get(key: String) -> ValueType? {
         let obj = self.getObj(key: key)
         return obj?.value
     }
     
-    func get() -> [ValueType?] {
+    public init() {}
+    
+    public func get() -> [ValueType?] {
         var values = [ValueType?]()
         keys.forEach { key in
             values.append(get(key: key))
@@ -35,21 +38,25 @@ public final class Cachew<ValueType> {
         return nil
     }
     
-    func set(key: String, value: Cachew<ValueType>.CachewValue) {
+    public func set(key: String, value: Cachew<ValueType>.CachewValue) {
         if !keys.contains(key) {
             keys.append(key)
         }
         wrapper.setObject(value, forKey: .init(key))
     }
     
-    func isExist(key: String) -> Bool {
+    public func isExist(key: String) -> Bool {
         return getObj(key: key) != nil
     }
     
-    func delete(key: String) {
+    public func delete(key: String) {
         if isExist(key: key) {
             wrapper.removeObject(forKey: .init(key))
         }
+    }
+    
+    public func delete() {
+        wrapper.removeAllObjects()
     }
     
 }
