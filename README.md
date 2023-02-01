@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/Cachew.svg?style=flat)](https://cocoapods.org/pods/Cachew)
 [![Platform](https://img.shields.io/cocoapods/p/Cachew.svg?style=flat)](https://cocoapods.org/pods/Cachew)
 
+Cachew is an in memory cache wrapper written in swift. The purpose of this project is to bring redis functionality into iOS application.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -22,7 +24,7 @@ pod 'Cachew'
 
 ## Author
 
-fdika24, 18220015@std.stei.itb.ac.id
+farhandika, 18220015@std.stei.itb.ac.id
 
 ## License
 
